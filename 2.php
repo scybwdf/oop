@@ -13,7 +13,12 @@
 
     $r=new Ren();
 
-  echo $r->name;
+    echo $r->name;
     $r->man();
+    echo "<br>";
 
+    $b=new Ren();
+
+    $b->name='wf2';
+    echo $b->name;
 ?>
