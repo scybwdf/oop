@@ -1,4 +1,6 @@
 <?php
+//final类不能被调用
+//final class A{}
 
 class A{
     /*
