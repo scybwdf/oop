@@ -2,7 +2,7 @@
 $cfg=array(
     'HOST'=>'localhost',
     'USER'=>'root',
-    'PASSWORD'=>'dakehui9118',
+    'PASSWORD'=>'123456',
     'DB'=>'oop',
     'ex'=>'wf_',
     'charset'=>'UTF8'

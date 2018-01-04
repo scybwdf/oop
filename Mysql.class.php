@@ -5,7 +5,7 @@ abstract class aDB{
     /**
      * 连接数据库，从配置文件读取配置信息
      */
-    abstract public function conn();
+    abstract protected function conn();
 
     /**
      * 执行sql
@@ -71,7 +71,7 @@ class Mysql extends aDB {
     /**
      * 连接数据库，从配置文件读取配置信息
      */
-    public function conn(){
+    protected function conn(){
         $cfg=include "config.php";
         $this->link=new mysqli($cfg['HOST'],$cfg['USER'],$cfg['PASSWORD'],$cfg['DB']);
         $this->query('set names '.$cfg['charset']);
